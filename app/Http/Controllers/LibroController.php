@@ -12,7 +12,7 @@ class LibroController extends Controller
         return response()->json(Libro::with('autor')->get(), 200);
     }
 
-    // Crear un nuevo libro
+    //  nuevo libro
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -29,7 +29,7 @@ class LibroController extends Controller
         ], 201);
     }
 
-    // Mostrar un libro específico
+    // Mostrar un libro 
     public function show($id)
     {
         $libro = Libro::with('autor')->find($id);
@@ -39,7 +39,7 @@ class LibroController extends Controller
         return response()->json($libro, 200);
     }
 
-    // Actualizar un libro
+    // Actualizar libro
     public function update(Request $request, $id)
     {
         $libro = Libro::find($id);
@@ -54,7 +54,7 @@ class LibroController extends Controller
         ], 200);
     }
 
-    // Eliminar un libro
+    // Eliminar  libro
     public function destroy($id)
     {
         $libro = Libro::find($id);
