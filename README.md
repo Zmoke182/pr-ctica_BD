@@ -24,11 +24,6 @@ DB_DATABASE=postgres
 DB_USERNAME=postgres.tu-usuario-supabase
 DB_PASSWORD=tu-contrasena
 DB_SSLMODE=require
-### 3. Ventas (/api/ventas)
-- GET /api/ventas - Lista todas las ventas registradas (Status 200).
-- POST /api/ventas - Registra una venta vinculada a un libro (Status 201 / 400).
-- PUT /api/ventas/{id} - Actualiza una venta (Status 200 / 404 / 400).
-- DELETE /api/ventas/{id} - Elimina el registro de una venta (Status 200 / 404).
 ```
 ## Instrucciones de Instalacion
 
